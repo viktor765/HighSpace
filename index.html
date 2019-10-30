@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Spel</title>
+		<link rel='stylesheet' type='text/css' href='style.css'/>
+	</head>
+	<body style='padding:10px;'>
+		<div id='container'>
+			<canvas id='canvas' width='1000' height='600'>
+				Your browser does not support HTML5 canvas. If you would like to view, please update your browser.
+			</canvas>
+
+			<div id='controls'>
+				W: Up<br/>
+				A: Left<br/>
+				S: Down<br/>
+				D: Right<br/>
+				Space or V: Shoot<br/>
+			</div>
+
+			<div id='cheat-buttons'>
+				<span onclick='stageNumber = 1;player.points=100;'>lvl 3</span>
+				<span onclick='stageNumber = 2;player.points=150;'>lvl 4</span>
+				<span onclick='stageNumber = 5;player.points=300;'>lvl 7</span>
+			</div>
+		</div>
+		<div class='clear'></div>
+		<button onclick='useFullscreen()'>Fullscreen</button>
+		
+		<script src='scripts/framework.js'></script>
+		<script src='scripts/player.js'></script>
+		<script src='scripts/bonus.js'></script>
+		<script src='scripts/stage.js'></script>
+		<script src='scripts/HUD.js'></script>
+		<script src='scripts/sound.js'></script>
+		<script src='scripts/webapitest.js'></script>
+		<script src='scripts/game.js'></script>
+	</body>
+</html>
